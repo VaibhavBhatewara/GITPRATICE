@@ -1,0 +1,27 @@
+package com.met.spring.test;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.met.model.Trainer;
+import com.met.model.TraningCompany;
+import com.met.model.Workshop;
+
+public class SpringTest {
+	public static void main(String args[]) {
+	try (AbstractApplicationContext context = new ClassPathXmlApplicationContext("test.xml")){
+		
+		Trainer train=context.getBean(Trainer.class);
+		//System.out.println("SPRING TEST"+train);
+		//train.train();
+		
+		TraningCompany traningcompany = (TraningCompany)context.getBean("METSolution");
+		//System.out.println("SPRING TEST@"+traningcompany);
+		
+		Workshop traningWorkshop = (Workshop) context.getBean("TraningWorkShop", "Workshop.class");
+		//System.out.println("SPRING TEST@123"+traningWorkshop);
+		traningWorkshop.conductWorkShop();
+		
+	}
+	}
+}

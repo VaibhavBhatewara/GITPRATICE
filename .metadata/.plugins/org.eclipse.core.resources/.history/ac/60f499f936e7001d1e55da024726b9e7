@@ -1,0 +1,32 @@
+package com.met.nonspringtest;
+
+import java.util.ArrayList;
+
+import com.met.model.JavaTrainer;
+import com.met.model.METSolution;
+import com.met.model.TraningWorkShop;
+import com.met.model.Workshop;
+
+public class NonSpringTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList subject =new ArrayList(4);
+		subject.add("OOPS");
+		subject.add("Solid Principle");
+		subject.add("Core JAVA");
+		subject.add("Collection");
+		String name = "Vaibhav";
+		
+		JavaTrainer java =new JavaTrainer(name,subject);
+		
+		METSolution traningCompany = new METSolution(java);
+		
+		
+		Workshop traningWorkshop = new TraningWorkShop(traningCompany); 
+		
+		traningWorkshop.conductWorkShop();
+		
+	}
+
+}

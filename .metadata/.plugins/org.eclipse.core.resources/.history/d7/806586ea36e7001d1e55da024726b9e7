@@ -1,0 +1,17 @@
+package com.met.spring.test;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.met.model.Trainer;
+
+public class SpringTest {
+	public static void Main(String args[]) {
+	try (AbstractApplicationContext context = new ClassPathXmlApplicationContext("test.xml")){
+		
+		Trainer train=context.getBean(Trainer.class);
+		System.out.println(train);
+		train.train();
+	}
+	}
+}

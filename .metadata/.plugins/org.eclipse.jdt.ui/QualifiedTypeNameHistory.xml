@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="com.met.model.Employee"/>
+    <fullyQualifiedTypeName name="com.met.model.trainer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.met.model.JavaTrainer"/>
+    <fullyQualifiedTypeName name="com.met.model.METSolution"/>
+    <fullyQualifiedTypeName name="com.met.model.TraningWorkShop"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+    <fullyQualifiedTypeName name="com.met.model.Trainer"/>
+    <fullyQualifiedTypeName name="com.met.model.TraningCompany"/>
+    <fullyQualifiedTypeName name="com.met.model.Workshop"/>
+</qualifiedTypeNameHistroy>

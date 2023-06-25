@@ -1,0 +1,16 @@
+class HelloWorld {
+
+    static String talk = "say hi....";
+    
+    public static void human()
+    {
+        System.out.println("Human can walk and"+talk);
+        
+    }
+    
+    
+    public static void main(String[] args) {
+        
+        HelloWorld.human();
+    }
+}

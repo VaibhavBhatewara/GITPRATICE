@@ -1,0 +1,21 @@
+
+public class Try {
+
+	public static void main(String[] args) {
+		
+		String a ="Yash";
+		
+		for(int i=a.length(); i<=0  ; i++) {
+			
+			System.out.print(i);
+			
+			
+		}
+		System.out.println("Hello world");
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

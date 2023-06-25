@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd" ><!-- default-lazy-init="true" -->
+ 
+ 
+ <bean id="JavaTrainer1" class ="com.met.model.JavaTrainer">
+	<constructor-arg name="name" value="Vaibhav"></constructor-arg> 
+	<constructor-arg name="subject">
+		<list>
+			<value>Java</value>
+			<value>OOPS</value>	
+			<value>Colection</value>			
+		</list>
+	</constructor-arg>
+ </bean>
+ <bean id="METSolution" class="com.met.model.METSolution">
+ 	<property name="trainer" ref="JavaTrainer1"></property>
+ </bean>
+ 
+ <bean id="TraningWorkShop" class="com.met.model.TraningWorkShop" >
+ <constructor-arg name="traningcompany" ref="METSolution"></constructor-arg>
+ </bean>
+
+</beans>
