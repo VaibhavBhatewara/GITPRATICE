@@ -5,7 +5,7 @@ class Hello1 {
     static int a;
 
     static {
-        
+        y = "sandesh";
         a = 45;
         company = "NSEIL";
     }
